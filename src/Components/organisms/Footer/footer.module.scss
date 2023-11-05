@@ -1,0 +1,102 @@
+.footer {
+    border: 2px solid var(--color--darkgrey);
+    border-radius: 7px;
+
+    background-color: var(--color--lightgrey);
+
+    @media (min-width: $mdBreakpoint) {
+    }
+
+    @media (min-width: $xlBreakpoint) {
+        max-width: 1381px;
+        margin: 0 auto;
+    }
+
+    &__footertop {
+        max-width: 1393px;
+        margin: 0 auto;
+        padding: 40px 4px 41px 24px;
+
+        @media (min-width: $mdBreakpoint) {
+            padding: 54px 91px 52px 62px;
+        }
+        @media (min-width: $xlBreakpoint) {
+            padding: 44px 80px 61px 80px;
+        }
+    }
+
+    .content {
+        display: grid;
+
+        @media (min-width: $mdBreakpoint) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (min-width: $xlBreakpoint) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 585px;
+            margin: auto;
+            max-width: 1359px;
+        }
+
+        &__logoFooter {
+            max-width: 125px;
+
+            @media (min-width: $xlBreakpoint) {
+                max-width: 145px;
+            }
+        }
+    }
+    &__hr {
+        border: 2px solid var(--color--darkgrey);
+        opacity: 0.3;
+    }
+
+    &__terms {
+        display: flex;
+        flex-direction: column;
+        padding-left: 34px;
+        cursor: pointer;
+
+        @media (min-width: $mdBreakpoint) {
+            margin-left: 32px;
+            flex-direction: row;
+            align-items: baseline;
+            gap: 36px;
+        }
+
+        @media (min-width: $xlBreakpoint) {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 95px;
+            max-width: 1106px;
+            margin: 0 auto;
+            padding-bottom: 15px;
+        }
+    }
+
+    &__subtile {
+        margin-top: 22px;
+    }
+
+    &__privacy {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__paragraph {
+        color: var(--color--black);
+        margin-top: 12px;
+        margin-bottom: 30px;
+        margin-left: 34px;
+
+        @media (min-width: $mdBreakpoint) {
+            margin-left: 62px;
+            max-width: 549px;
+        }
+
+        @media (min-width: $xlBreakpoint) {
+            display: none;
+        }
+    }
+}

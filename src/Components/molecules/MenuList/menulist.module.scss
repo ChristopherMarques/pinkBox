@@ -1,0 +1,58 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        "Upbox Product"
+        "FindUsOn Help";
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 37px;
+    gap: 20px;
+
+    @media (min-width: $mdBreakpoint) {
+        padding-top: 13px;
+        column-gap: 70px;
+
+        grid-template-areas:
+            "Upbox FindUsOn"
+            "Product Help";
+    }
+
+    @media (min-width: $xlBreakpoint) {
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 47px;
+        grid-template-areas: "Upbox FindUsOn Product Help";
+    }
+
+    &__menuitem {
+        display: flex;
+        max-width: fit-content;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 24px;
+
+        cursor: pointer;
+    }
+    &__menuitem:first-child {
+        grid-area: Upbox;
+    }
+
+    &__menuitem:nth-child(2) {
+        grid-area: Product;
+    }
+
+    &__menuitem:nth-child(3) {
+        grid-area: FindUsOn;
+    }
+
+    &__menuitem:nth-child(4) {
+        grid-area: Help;
+    }
+
+    &__element {
+        padding-bottom: 10px;
+
+        @media (min-width: $mdBreakpoint) {
+            padding-bottom: 10px;
+        }
+    }
+}

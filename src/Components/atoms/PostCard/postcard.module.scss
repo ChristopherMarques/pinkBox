@@ -1,0 +1,30 @@
+.PostCard {
+    width: 100%;
+    max-width: 312px;
+    max-height: 431px;
+    height: auto;
+    margin-bottom: 32px;
+    cursor: pointer;
+
+    &__img {
+        width: 100%;
+        max-width: 312px;
+        object-fit: cover;
+    }
+    .favoriteIcon {
+        display: block;
+    }
+    .favoriteIcon img {
+        width: 24px;
+        height: 24px;
+    }
+    &--favorite {
+        max-width: 648px;
+        max-height: 431px;
+    }
+    &--favorite img {
+        max-width: 648px;
+        object-fit: cover;
+        max-height: 431px;
+    }
+}

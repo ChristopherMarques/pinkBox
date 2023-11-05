@@ -1,0 +1,20 @@
+.SocialMedia {
+    display: none;
+    cursor: pointer;
+
+    @media (min-width: $mdBreakpoint) {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 35px;
+    }
+
+    @media (min-width: $xlBreakpoint) {
+        margin: 0 auto;
+    }
+
+    &__icons {
+        border-radius: 5px;
+        margin-right: 31px;
+    }
+}
