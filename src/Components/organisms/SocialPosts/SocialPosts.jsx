@@ -1,10 +1,10 @@
+import Styles from "./socialPosts.module.scss";
 import ButtonLinkColor from "../../atoms/ButtonLinkColor/ButtonLinkColor";
 import img1 from "../../../assets/img/img1.png";
 import img2 from "../../../assets/img/img2.png";
 import img3 from "../../../assets/img/img3.png";
 import img4 from "../../../assets/img/img4.png";
 import SocialCard from "../../molecules/SocialCard/SocialCard";
-import Styles from "./socialPosts.module.scss";
 
 export default function SocialPosts() {
     return (
@@ -18,25 +18,28 @@ export default function SocialPosts() {
                         src={img1}
                         text={"How to rock the lip look that turns heads"}
                         large={true}
-                        favorite={true}
+                        favorite={false}
                     />
 
                     <SocialCard
                         src={img2}
                         text={"Find the perfect shade for the season"}
                         large={true}
+                        favorite={false}
                     />
 
                     <SocialCard
                         src={img3}
                         text={"The 5 eye shadow secrets you never knew"}
                         large={true}
+                        favorite={false}
                     />
 
                     <SocialCard
                         src={img4}
                         text={"The pro-tips for at home hair dying"}
                         large={true}
+                        favorite={false}
                     />
                 </div>
             </div>

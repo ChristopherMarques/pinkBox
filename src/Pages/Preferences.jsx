@@ -28,8 +28,8 @@ export default function Preferences() {
                     />
                 </div>
                 <SelectComponent />
-                
 
+                
             </div>
         </>
     );

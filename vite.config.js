@@ -8,6 +8,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: "@import './src/Components/_base/_breakpoints.scss';"
+        
       }
     }
   }

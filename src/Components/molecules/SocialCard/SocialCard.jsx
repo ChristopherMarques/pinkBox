@@ -6,7 +6,6 @@ export default function SocialCard({ src, text, favorite }) {
     const FavoriteContainer = `${Styles.container} ${
         favorite ? Styles["container--favorite"] : Styles["container"]
     }`;
-
     return (
         <section className={FavoriteContainer}>
             <div className={Styles.content}>

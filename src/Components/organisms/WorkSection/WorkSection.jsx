@@ -8,10 +8,10 @@ import underline2 from "../../../assets/img/underline2.png";
 import WorkCard from "../../molecules/WorkCard/WorkCard";
 import ButtonLink from "../../atoms/ButtonLink/ButtonLink";
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function WorkSection() {
-
+    const navigate = useNavigate();
     const [windowSize, setWindowSize] = useState({
         width: window.innerWidth,
         height: window.innerHeight,
@@ -21,18 +21,16 @@ export default function WorkSection() {
         const handleResize = () => {
             setWindowSize({
                 width: window.innerWidth,
-                height: window.innerHeight
+                height: window.innerHeight,
             });
         };
 
-        window.addEventListener('resize', handleResize);
+        window.addEventListener("resize", handleResize);
 
         return () => {
-            window.removeEventListener('resize', handleResize)
-        }
+            window.removeEventListener("resize", handleResize);
+        };
     }, []);
-
-    const navigate = useNavigate();
 
     return (
         <section className={Styles.container}>

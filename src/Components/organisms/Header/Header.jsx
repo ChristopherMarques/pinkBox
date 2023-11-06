@@ -1,3 +1,4 @@
+import React from "react";
 import Styles from "../Header/header.module.scss";
 import Topbar from "../../../assets/img/Topbar2.png";
 import Logo from "../../../assets/img/LogoFooter.png";
@@ -15,7 +16,6 @@ export default function Header() {
                 />
             </div>
             <div className={Styles.content}>
-                
                 <Link to={"/"}>
                     <img className={Styles.content__logo} src={Logo} />
                 </Link>
